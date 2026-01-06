@@ -24,7 +24,6 @@ const CourseCard = (props: React.ComponentProps<typeof Card>) => {
         queryKey: ["course"],
         endpoint: `${import.meta.env.VITE_API_URL}/get-course`
     })
-
     const clickCard = (id : string) => {
         navigate(`/user/course-detail/${id}`)
     }
